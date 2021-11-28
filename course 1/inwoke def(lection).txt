@@ -1,0 +1,10 @@
+We have to INWOKE the function (вызвать)
+
+
+def suf(last):
+if last == 'es':
+	print('Hola')
+elif last == 'ov':
+	print('Zdorovo')
+else:
+	print('Hello')

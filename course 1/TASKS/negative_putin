@@ -1,0 +1,23 @@
+# MAKING NEGATIVE PHOTO
+
+import image
+
+img = image.Image("luther.jpg")
+win = image.ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+img.setDelay(3,45)   # setDelay(0) turns off animation
+
+for col in range(img.getWidth()):
+    for row in range(img.getHeight()):
+        p = img.getPixel(col, row)
+        newred = 255 - p.getRed()
+        newgreen = 255 - p.getGreen()
+        newblue = 255 - p.getBlue()
+#outer loop iterates over the columns
+#the inner loop iterates over the rows.
+        newpixel = image.Pixel(newred, newgreen, newblue)
+
+        img.setPixel(col, row, newpixel)
+
+img.draw(win)
+win.exitonclick()

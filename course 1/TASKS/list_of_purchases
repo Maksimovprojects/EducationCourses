@@ -1,0 +1,4 @@
+vegetables = ['potato', 'carrot', 'onion', 'cabbage', 'tomato', 'cucumber']
+print('list of purchases')
+for vegetables in vegetables:
+    print(vegetables)

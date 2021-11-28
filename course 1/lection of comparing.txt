@@ -1,0 +1,9 @@
+Comparing numbers
+
+number = -1
+print ('Before' number
+For series in [9, 41, 12, 3, 74, 15]
+	if series > number
+	number = series
+	print(number, series)
+Print ('After', number)
